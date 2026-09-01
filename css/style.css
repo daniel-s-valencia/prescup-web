@@ -507,6 +507,12 @@ header {
     color: black;
 }
 
+.btn-register:active, .btn-register:focus-visible {
+    background-color: rgba(14, 26, 37, 1) !important;
+    border-color: rgba(14, 26, 37, 1) !important;
+    box-shadow: none !important;
+}
+
 .btn-practice {
     background-color: #fff;
     border: 2px solid #4C0F16;
