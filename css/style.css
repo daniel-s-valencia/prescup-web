@@ -790,16 +790,16 @@ header {
     width: 100%;
 }
 
-#timeline .pc8-intro-hourglass {
+#timeline .pc8-intro-logo {
     display: block;
     width: 100%;
-    max-width: 188px;
+    max-width: 330px;
     height: auto;
 }
 
 @media (max-width: 767.98px) {
-    #timeline .pc8-intro-hourglass {
-        max-width: 120px;
+    #timeline .pc8-intro-logo {
+        max-width: 240px;
         margin: 0 auto 0.5rem;
     }
 }
