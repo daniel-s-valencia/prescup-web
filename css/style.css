@@ -793,13 +793,23 @@ header {
 #timeline .pc8-intro-logo {
     display: block;
     width: 100%;
-    max-width: 330px;
+    max-width: 495px;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    #timeline .pc8-intro-graphic {
+        width: 37.5%;
+    }
+
+    #timeline .pc8-intro-copy {
+        width: 62.5%;
+    }
 }
 
 @media (max-width: 767.98px) {
     #timeline .pc8-intro-logo {
-        max-width: 240px;
+        max-width: 360px;
         margin: 0 auto 0.5rem;
     }
 }
