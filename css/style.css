@@ -531,6 +531,18 @@ header {
     color: white;
 }
 
+.home-action-pair {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home-action-pair .btn {
+    margin: 0 !important;
+}
+
 
 
 /* Disable animation overlay effect on registration buttons */
@@ -790,28 +802,22 @@ header {
     width: 100%;
 }
 
+#timeline .pc8-intro-heading {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
 #timeline .pc8-intro-logo {
     display: block;
-    width: 100%;
-    max-width: 495px;
+    flex: 0 0 auto;
+    width: clamp(95px, 25vw, 240px);
     height: auto;
 }
 
-@media (min-width: 768px) {
-    #timeline .pc8-intro-graphic {
-        width: 37.5%;
-    }
-
-    #timeline .pc8-intro-copy {
-        width: 62.5%;
-    }
-}
-
-@media (max-width: 767.98px) {
-    #timeline .pc8-intro-logo {
-        max-width: 360px;
-        margin: 0 auto 0.5rem;
-    }
+#timeline .pc8-intro-heading h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    text-align: left;
 }
 
 @media (max-width: 575.98px) {
