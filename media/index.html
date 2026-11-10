@@ -33,7 +33,7 @@
 
     <!-- Main Stylesheet -->
 
-    <link rel="stylesheet" href="../css/style.css?ver=8.1.8.1">
+    <link rel="stylesheet" href="../css/style.css?ver=8.1.8.2">
 
     <!-- Media-page carousel/lightbox overrides -->
 
@@ -74,7 +74,7 @@
         #pc7 .pc-photo-lightbox__image {
             width: auto !important;
             height: auto !important;
-            max-width: calc(100vw - 160px) !important;
+            max-width: calc(100vw - var(--pc-lightbox-gutter) - var(--pc-lightbox-gutter)) !important;
             max-height: calc(100vh - 100px) !important;
             object-fit: contain !important;
             cursor: default !important;
@@ -87,7 +87,6 @@
 
         @media (max-width: 767.98px) {
             #pc7 .pc-photo-lightbox__image {
-                max-width: calc(100vw - 70px) !important;
                 max-height: calc(100vh - 90px) !important;
             }
         }
