@@ -1598,12 +1598,11 @@ footer {
     }
 
     /*
-     * Extend the full carousel approximately 50px
-     * beyond the container on each side.
+     * Extend into the available outer space on wide screens,
+     * keeping both controls inside the viewport at narrower widths.
      */
     .pc-photo-carousel__shell {
-        margin-left: -50px;
-        margin-right: -50px;
+        margin-inline: clamp(-50px, calc((1200px - 100vw) / 2), 0px);
     }
 }
 
@@ -2112,15 +2111,15 @@ footer {
 }
 
 .tab-content-media .tab-content-media-left img {
-    max-width: 300px;
+    max-width: min(300px, 100%);
 }
 
 .pc1-logo, .pc3-logo, .pc4-logo {
-    max-width: 225px !important;    
+    max-width: min(225px, 100%) !important;
 }
 
 .pc2-logo, .pc5-logo, .pc6-logo {
-    max-width: 270px !important;    
+    max-width: min(270px, 100%) !important;
 }
 
 @media (max-width: 768px) {
@@ -3180,6 +3179,12 @@ a.video-thumbnail:hover:after {
     color: var(--light-text);
 }
 
+@media (max-width: 991.98px) {
+    .pc8-page #intelligence-tabs > .container {
+        padding-inline: 1.5rem;
+    }
+}
+
 .pc8-section {
     position: relative;
     padding: 1.25rem 0 2.75rem;
@@ -3197,6 +3202,12 @@ a.video-thumbnail:hover:after {
     color: #ffffff;
     font-size: clamp(2rem, 1.2rem + 2.4vw, 2.9rem);
     line-height: 1.1;
+}
+
+@media (max-width: 575.98px) {
+    .pc8-sections h2 {
+        font-size: clamp(1.5rem, 7.5vw, 2rem);
+    }
 }
 
 /* h5 font-family/weight is set in the page's inline style block,
